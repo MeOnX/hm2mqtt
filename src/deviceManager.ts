@@ -64,9 +64,9 @@ export class DeviceManager {
       const prefix = this.config.topicPrefix;
       this.deviceTopics[deviceKey] = {
         deviceTopicOld: `hame_energy/${device.deviceType}/device/${deviceId}/ctrl`,
-        deviceTopicNew: `marstek_energy/${device.deviceType}/device/${deviceIdNew}/ctrl`,
+        deviceTopicNew: `marstek_energy/${device.deviceType}/device/${deviceId}/ctrl`,
         deviceControlTopicOld: `hame_energy/${device.deviceType}/App/${deviceId}/ctrl`,
-        deviceControlTopicNew: `marstek_energy/${device.deviceType}/App/${deviceIdNew}/ctrl`,
+        deviceControlTopicNew: `marstek_energy/${device.deviceType}/App/${deviceId}/ctrl`,
         publishTopic: `${prefix}/${device.deviceType}/device/${device.deviceId}`,
         controlSubscriptionTopic: `${prefix}/${device.deviceType}/control/${device.deviceId}`,
         availabilityTopic: `${prefix}/${device.deviceType}/availability/${device.deviceId}`,
