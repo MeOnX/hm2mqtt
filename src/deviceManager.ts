@@ -34,7 +34,7 @@ export class DeviceManager {
   private deviceTopics: Record<DeviceKey, DeviceTopics> = {};
   private deviceStates: Record<DeviceKey, Record<string, DeviceStateData> | undefined> = {};
   private deviceResponseTimeouts: Record<DeviceKey, NodeJS.Timeout[]> = {};
-  private readonly encryptedDeviceTypes = new Set(['HMA', 'HMF', 'HMK', 'HMJ']);
+  private readonly encryptedDeviceTypes = new Set(['HMA', 'HMF', 'HMK']);
 
   constructor(
     private config: MqttConfig,
